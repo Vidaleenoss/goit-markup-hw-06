@@ -55,11 +55,50 @@
             </li>
           </ul>
         </address>
+
+        <button class="burger-btn" type="button" data-menu-open>
+          <svg class="burger-icon" width="24" height="24">
+            <use href="./images/icons.svg#icon-burger"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="mobile-menu" data-menu>
+        <div class="container mobile-menu-container">
+          <button
+            class="mobile-menu-close"
+            type="button"
+            aria-label="close-mobile-menu-btn"
+            data-menu-close
+          >
+            <svg class="burger-icon" width="8" height="8">
+              <use href="./images/icons.svg#icon-close-menu-mobile"></use>
+            </svg>
+          </button>
+          <nav class="mobile-menu-nav">
+            <li class="mobile-menu-item-studio">Studio</li>
+            <li class="mobile-menu-item">Portfolio</li>
+            <li class="mobile-menu-item">Contacts</li>
+          </nav>
+          <address class="mobile-adress-menu">
+            <ul>
+              <li class="mobile-contacts-item">
+                <a class="mobile-contacts-link" href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
+              </li>
+              <li class="mobile-contacts-item">
+                <a class="mobile-contacts-link" href="tel:+110001111111"
+                  >+11 (000) 111-11-11</a
+                >
+              </li>
+            </ul>
+          </address>
+        </div>
       </div>
     </header>
 
     <!--main-->
-    <main>
+    <main class="">
       <section class="hero section">
         <div class="container">
           <h1 class="hero-title">Effective Solutions for Your Business</h1>
@@ -132,7 +171,7 @@
       <!--team-->
 
       <section class="team section">
-        <div class="container">
+        <div class="container team-container">
           <h2 class="section-title">Our Team</h2>
           <ul class="team-list">
             <li class="team-item">
@@ -495,7 +534,7 @@
         <div class="footer-wrapper-subscribe">
           <p class="footer-form-title">Subscribe</p>
           <form class="footer-form" name="user-subscribe">
-            <label for="footer-email" class="footer-lable">
+            <label for="footer-email" class="footer-label">
               <input
                 class="footer-form-input"
                 type="email"
@@ -516,7 +555,7 @@
       </div>
     </footer>
 
-    <div class="backdrop" data-modal>
+    <div class="backdrop hide" data-modal>
       <div class="modal">
         <button
           class="modal-btn"
@@ -613,5 +652,6 @@
     </div>
 
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>
