@@ -1090,7 +1090,7 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
             pointer-events: auto;
         }
 
-.hide {}
+
 
 .modal {
     position: absolute;
@@ -1146,26 +1146,27 @@ stroke: currentColor;
         letter-spacing: 0.02em;
         text-align: center;
         color: #2e2f42;
-}
+    }
+    
 
-/* form */
-
-.feadback-wrapper {
-    margin-bottom: 8px;
-}
-
-.modal-label {
-    display: block;
-    margin-bottom: 4px;
-    font-family: "Roboto", sans-serif;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 1.7;
-    letter-spacing: 0.04em;
-    color: #8e8f99;
-
-}
-
+        .modal-label {
+            display: block;
+            margin-bottom: 4px;
+            font-family: "Roboto", sans-serif;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 1.7;
+            letter-spacing: 0.04em;
+            color: #8e8f99;
+    
+        }
+    /* form */
+    
+    .feadback-wrapper {
+        margin-bottom: 8px;
+    }
+    
+    
 .feadback-field {
     position: relative;
 }
@@ -1251,9 +1252,6 @@ stroke: currentColor;
         transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.feadback-privacy {
-
-}
 
 .feadback-toggler-icon {
     opacity: 0;
@@ -1294,4 +1292,27 @@ stroke: currentColor;
         background-color: #4d5ae5;
         cursor: pointer;
         transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.btn-modal:hover,
+.btn-modal:focus {
+    background-color: #404bbf;
+}
+
+@media only screen and (min-width: 768px) {
+
+    .modal {
+        width: 408px;
+        padding: 72px 24px 24px 24px;
+        min-height: 584px;
+        }
+
+        /* form */
+        .feadback-agreement {
+            display: block;
+            margin-bottom: 24px;
+            line-height: 1.33;
+
+        }
+      
 }
