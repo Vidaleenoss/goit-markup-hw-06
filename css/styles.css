@@ -379,7 +379,6 @@ display: inline-block;
 /* hero */
 .hero { 
     display: flex;
-    max-width: 320px;
     margin: 0 auto;
     padding: 72px 0px;
     background-color: #2e2f42;
@@ -439,7 +438,6 @@ max-width: 216px;
 
 @media only screen and (min-width: 768px) {
 .hero {
-    max-width: 768px;
         padding: 112px 0px;
    
     background-image:
@@ -863,13 +861,6 @@ width: calc((100% - 24px) / 2);
    height: auto;
    
 }
-
-   @media only screen and (min-width: 768px) {
-     .portfolio-images {
-    width: 360px;
-        height: 300px;
-     }
-   }
 
    /* Footer */
 
