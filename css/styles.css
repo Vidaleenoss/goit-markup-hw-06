@@ -306,7 +306,7 @@ display: inline-block;
 }
 
 
-.mobile-menu-list {
+.mobile-menu-nav {
     margin-bottom: auto;
 }
 
@@ -334,12 +334,15 @@ display: inline-block;
     color: #404bbf;
 }
 
-.mobile-contacts-list {
-    margin-bottom: 48px;
-}
+
 
 .mobile-contacts-item:not(:last-child) {
     margin-bottom: 24px;
+}
+
+.mobile-contacts {
+    font-style: normal;
+    margin-bottom: 48px;
 }
 
 .mobile-contacts-link {
@@ -1321,8 +1324,6 @@ stroke: currentColor;
 
         /* form */
         .feadback-agreement {
-            display: block;
-            margin-bottom: 24px;
             line-height: 1.33;
 
         }
