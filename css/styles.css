@@ -373,7 +373,7 @@ display: inline-block;
     display: flex;
         justify-content: flex-start;
         gap: 40px;
-        margin-top: 8px;
+        margin-top: 0;
 }
 
 /* hero */
@@ -874,6 +874,12 @@ width: calc((100% - 24px) / 2);
   .footer {
       padding: 96px 0;
       background: #2e2f42;
+  }
+
+  @media only screen and (min-width: 1158px) {
+   .footer {
+    padding: 100px 0;
+    }
   }
 
   
