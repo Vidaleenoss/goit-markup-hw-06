@@ -330,7 +330,7 @@ display: inline-block;
         color: #2e2f42;
 }
 
-.mobile-menu-link.accent {
+.mobile-menu-link.active {
     color: #404bbf;
 }
 
@@ -385,7 +385,7 @@ display: inline-block;
     background-image:
         linear-gradient(rgba(46, 47, 66, 0.7),
             rgba(46, 47, 66, 0.7)),
-        url("../images/hero/Dark-bg-mob@1x.jpg");
+        url("../images/hero/Dark-bg_mob@1x.jpg");
 
     background-repeat: no-repeat;
     background-position: center;
