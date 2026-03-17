@@ -70,8 +70,6 @@ img {
     margin: 0 auto;
 }
 
-.accent-text {
-}
 @media only screen and (min-width: 768px) {
 .container {
     min-width: 768px;
@@ -859,6 +857,17 @@ width: calc((100% - 24px) / 2);
             color: #434455;
         }
    }
+.portfolio-images {
+    width: 288px;
+        height: 280px;
+}
+
+   @media only screen and (min-width: 768px) {
+     .portfolio-images {
+    width: 360px;
+        height: 300px;
+     }
+   }
 
    /* Footer */
 
@@ -912,7 +921,7 @@ text-align: center;
 
   
 
-  .footer-logo {}
+
 
 
   .footer-text {
@@ -947,7 +956,6 @@ text-align: center;
         justify-content: center;
   }
 
-  .footer-social-item {}
 
   .footer-social-link {
     display: flex;
