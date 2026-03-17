@@ -330,7 +330,7 @@ display: inline-block;
         color: #2e2f42;
 }
 
-.mobile-menu-link.active {
+.mobile-menu-link.accent {
     color: #404bbf;
 }
 
@@ -853,8 +853,10 @@ width: calc((100% - 24px) / 2);
         }
    }
 .portfolio-images {
-    width: 288px;
-        height: 280px;
+   display: block;
+   width: 100%; 
+   height: auto;
+   
 }
 
    @media only screen and (min-width: 768px) {
@@ -931,7 +933,7 @@ text-align: center;
         line-height: 1.5;
         letter-spacing: 0.02em;
         color: #f4f4fd;
-        margin-top: 16px;
+        margin-top: 0;
 
   }
 
