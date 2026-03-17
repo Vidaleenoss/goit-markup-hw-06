@@ -136,7 +136,6 @@ img {
 .footer-logo .logo-part {
     color: #f4f4fd;
 display: inline-block;
-margin-bottom: 16px;
 }
 
 .burger-btn {
@@ -369,7 +368,7 @@ margin-bottom: 16px;
 
 .mobile-social-list {
     display: flex;
-        justify-content: center;
+        justify-content: flex-start;
         gap: 40px;
         margin-top: 8px;
 }
@@ -481,21 +480,21 @@ max-width: 216px;
             background-image:
                 linear-gradient(rgba(46, 47, 66, 0.7),
                     rgba(46, 47, 66, 0.7)),
-                url("../images/hero/people-office\ 1_desk@1x.jpg");
+                url("../images/hero/people-office 1_desk@1x.jpg");
     
 
         }
 
 
-                 @media (min-resolution: 192dpi),
-                 (min-resolution: 2dppx) {
-                     .hero {
-                         background-image:
-                             linear-gradient(rgba(46, 47, 66, 0.7),
-                                 rgba(46, 47, 66, 0.7)),
-                             url("../images/hero/people-office\ 1_desk@2x.jpg");
-                     }
-                 }
+@media (min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+.hero {
+background-image:
+linear-gradient(rgba(46, 47, 66, 0.7),
+rgba(46, 47, 66, 0.7)),
+ url("../images/hero/people-office 1_desk@2x.jpg");
+}
+}
 
         
     
@@ -708,7 +707,7 @@ gap: 64px 24px;
 
   @media only screen and (min-width: 1158px) {
     .team-container {
-    padding: 15px;
+    padding: 0px 16px;
    }
     .team-item{
         
@@ -898,7 +897,7 @@ text-align: center;
 
 
 
-  @media only screen and (min-width: 768px) and (max-width: 1158px) {
+  @media only screen and (min-width: 768px) and (max-width: 1157px) {
     .footer-container {
       padding: 0 108px;
     }
@@ -913,6 +912,11 @@ text-align: center;
 .footer-info {
     margin-right: 120px;
     }
+  }
+
+  .footer-logo {
+    display: inline-block;
+    margin-bottom: 16px;
   }
 
   
@@ -993,13 +997,18 @@ text-align: center;
    @media only screen and (min-width: 768px) {
      .footer-form {
        flex-direction: row;
-       
+       gap: 24px;
      }
    }
 
   .footer-label {
     max-width: 453px;
-    width: 100%;
+    width: 288px;
+  }
+  @media only screen and (min-width: 768px) {
+    .footer-label{
+      width: 264px;
+    }
   }
 
   .footer-form-input {
@@ -1016,6 +1025,8 @@ text-align: center;
       opacity: 1;
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
+ 
+  
 
    .footer-form-input:focus {
        border-color: #31d0aa;
@@ -1059,7 +1070,6 @@ line-height: 1.5;
   padding: 8px 16px;
   color: #fff;
   background-color: #4d5ae5;
-  margin-right: 16px;
 
 transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
